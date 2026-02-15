@@ -12,7 +12,9 @@ vi.mock('react-i18next', () => ({
 
 vi.mock('../../../locales/formatDate', () => ({
     formatDate: (date: Date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`,
-})); const mockShipments: OutgoingShipmentListItemDto[] = [
+}));
+
+const mockShipments: OutgoingShipmentListItemDto[] = [
     new OutgoingShipmentListItemDto({
         id: 's1',
         name: 'Shipment Alpha',
